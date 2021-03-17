@@ -1,0 +1,154 @@
+<html>
+<title>
+Sign in
+</title>
+<center>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+h4
+{
+background-image:linear-gradient(to bottom left,rgba(85,180,176,1),rgba(255,0,0,0.5));
+width:400px;
+height:100px;
+border-radius:24px;
+border:0px dotted;
+padding:30px 10px 10px 10px;
+margin-top:50px;
+box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+}
+h4:hover
+{
+color:rgba(255,255,255,0.5);
+}
+.h
+{
+padding-top:30px;
+padding-bottom:40px;
+}
+.f
+{
+width:400px;
+background-image:linear-gradient(to bottom left,rgba(85,180,176,1),rgba(255,0,0,0.5));
+padding-top:30px;
+padding-bottom:20px;
+border:0px solid;
+border-radius:48px;
+margin-bottom:80px;
+box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+}
+li
+{
+list-style-type:none;
+text-decoration:none;
+float:right;
+color:white;
+font-size:20px;
+margin-left:20px;
+padding:10px 20px 12px 20px; 
+}
+li:hover
+{
+background-color:rgba(255,255,255,0.3);
+border-bottom:11px solid rgba(0,255,255,0.5);
+}
+.dd
+{
+text-decortion:none;
+background-color:black;
+border-color:transparent;
+color:white;
+font-size:20px;
+padding:13px 0px 11px 20px;
+float:right;
+}
+.dd:hover
+{
+background-color:rgba(255,255,255,0.3);
+color:black;
+border-bottom:12px solid rgba(0,255,255,0.5);
+}
+.ic
+{
+float:left;
+}
+
+</style>
+<div>
+<div>
+<nav class="navbar navbar-fixed-top" style="height:60px; background-color:black; border-bottom:10px solid red;">
+<ul>
+<img src="p4.png" style="width:100px; height:50px;">
+<a href="signin.html" style="text-decoration:none; color:white;"><li style="margin-right:100px; background-color:rgba(255,255,255,0.3); border-bottom:10px solid rgba(0,255,255,0.5);">Sign up</li></a>
+<a href="dbmsproject.html" style="text-decoration:none; color:white; "><li>Login</li></a>
+<a href="aboutus.html" style="text-decoration:none; color:white;"><li>About us</li></a>
+<select class="dd" name="Branches">
+<option>Branches</option>
+<option>Bengaluru</option>
+<option>Mangaluru</option>
+<option>Bagalkot</option>
+</select>
+<a href="main.html" style="text-decoration:none; color:white;"><li><span class="glyphicon glyphicon-home"></li></a>
+<div style="float:right; margin-right:50px;">
+<form action="https://www.google.com/search" method="GET">
+<input type="text" name="q" style="width:300px; height:32px;float:right; margin-top:10px; font-size:20px;" placeholder="Search">
+<button type="submit" style="background-color:transparent; border-color:transparent; margin-right:-9px; margin-top:-3px;"><span class="glyphicon glyphicon-search" style="background-color:rgba(0,255,255,0.7); padding:9px 8px 9px 8px; margin-top:9px;float:right;"></span></button>
+</form>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<br>
+<div style="width:400px;box-shadow:10px 10px 30px rgba(0,0,0,0.5); background-image:linear-gradient(to bottom left,rgba(85,180,176,0.5),rgba(255,0,0,0.5));margin-top:50px;border-radius:192px; width:50%; padding-bottom:5px;">
+<div class="h">
+<h4>
+Create your Username and Password 
+</h4>
+</div>
+</head>
+<body style="background-color:rgba(85,180,176,0.3);">
+<script src="val2.js">
+</script>
+<div class="f">
+<form action="dbmsproject.html" onsubmit="return val2()">
+<div style="float:left; padding-left:80px;">
+<label style="background-color:rgba(118,118,118,0.3); margin-left:30px;">Username:</label>
+</div><br>
+<div style="width:45%;">
+<input type="text" id="name" required autofocus autocomplete="off">
+<p id="h" style="color:white; margin-right:8px; width:150px; height:10px;"></p>
+</div><br>
+<div style="float:left; padding-left:80px;">
+<label style="background-color:rgba(118,118,118,0.3); margin-left:30px;">Password:</label>
+</div><br>
+<div style="width:45%;">
+<input type="password" id="psw" required autofocus autocomplete="off">
+<p id="pp" style="color:white; margin-right:8px; width:150px; height:10px;"></p>
+</div>
+<a href="rule.html" style="float:right;color:white; margin:10px 110px 10px 0px;"><b>Pattern to create?</b></a>
+<br>
+<input type="submit" style="width:45%;height:5%;box-shadow:5px 5px 5px rgba(0,0,0,0.3);background-image:linear-gradient(to bottom left,rgba(255,0,0,0.5),rgba(85,180,176,0.5));border-radius:12px;background-color:rgba(194,195,208,0.5);padding:2px 2px 2px 2px;"  value="Submit">
+</form>
+</div>
+</body>
+</div>
+</center>
+<div style="margin-top:70px; background-color:black; width:100%; height:100px; border-top:10px solid red;">
+<div style="margin-top:30px; margin-left:700px;" class="ic"><a href="https://www.facebook.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-facebook-official" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://twitter.com/login" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-twitter-square" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://linkedin.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-linkedin-square" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://www.instagram.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-instagram" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://www.youtube.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-youtube-play" style="font-size:30px;"></i></div>
+</div>
+</html>

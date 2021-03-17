@@ -1,0 +1,167 @@
+<html>
+<title>
+Sign in
+</title>
+<center>
+<div class="secondsquare">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<style>
+h1
+{
+color:rgba(255,0,0,0.7);
+background:-webkit-radial-gradient(rgba(0,0,255,0.1),rgba(0,0,0,1));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;	
+}
+.mb
+{
+	padding:20px 20px 20px 30px;
+	width:300px;
+	background-color:rgba(0,0,0,0.2);
+	border:0px solid;
+	border-radius:12px;
+	background-image:linear-gradient(to bottom right,rgba(255,255,255,0.7)40%,rgba(0,0,0,0.5));
+	box-shadow:10px 10px 20px rgba(0,0,0,0.3);
+}
+.in
+{
+	float:left;
+	padding-left:10px;
+	margin-top:-5px;
+}
+.bo
+{
+	width:90%;
+}
+.secondsquare
+{
+	width:500px;
+	margin-top:100px;
+	padding-bottom:50px;
+	border:0px solid;
+	border-radius:48px;
+	background-image:linear-gradient(to bottom right,rgba(255,255,255,0.5),rgba(0,0,0,0.5));
+	box-shadow:10px 10px 20px rgba(0,0,0,0.3);
+}
+li
+{
+list-style-type:none;
+text-decoration:none;
+float:right;
+color:white;
+font-size:20px;
+margin-left:20px;
+padding:10px 20px 12px 20px; 
+}
+li:hover
+{
+background-color:rgba(255,255,255,0.3);
+border-bottom:11px solid rgba(0,255,255,0.5);
+}
+.dd
+{
+text-decortion:none;
+background-color:black;
+border-color:transparent;
+color:white;
+font-size:20px;
+padding:13px 0px 11px 20px;
+float:right;
+}
+.dd:hover
+{
+background-color:rgba(255,255,255,0.3);
+color:black;
+border-bottom:12px solid rgba(0,255,255,0.5);
+}
+.ic
+{
+float:left;
+}
+</style>
+<h1 class="h">
+Sign in
+</h1>
+<h3 style="color:rgba(0,118,118,1); 
+background:-webkit-radial-gradient(rgba(0,0,255,0.3),black);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;">
+Enter your details
+</h3>
+</head>
+<body>
+<div>
+<div>
+<nav class="navbar navbar-fixed-top" style="height:60px; background-color:black; border-bottom:10px solid red;">
+<ul>
+<img src="p4.png" style="width:100px; height:50px;">
+<a href="signin.html" style="text-decoration:none; color:white;"><li style="margin-right:100px; background-color:rgba(255,255,255,0.3); border-bottom:10px solid rgba(0,255,255,0.5);">Sign up</li></a>
+<a href="dbmsproject.html" style="text-decoration:none; color:white; "><li>Login</li></a>
+<a href="aboutus.html" style="text-decoration:none; color:white;"><li>About us</li></a>
+<select class="dd" name="Branches">
+<option>Branches</option>
+<option>Bengaluru</option>
+<option>Mangaluru</option>
+<option>Bagalkot</option>
+</select>
+<a href="main.html" style="text-decoration:none; color:white;"><li><span class="glyphicon glyphicon-home"></li></a>
+<div style="float:right; margin-right:50px;">
+<form action="https://www.google.com/search" method="GET">
+<input type="text" name="q" style="width:300px; height:32px;float:right; margin-top:10px; font-size:20px;" placeholder="Search">
+<button type="submit" style="background-color:transparent; border-color:transparent; margin-right:-9px; margin-top:-3px;"><span class="glyphicon glyphicon-search" style="background-color:rgba(0,255,255,0.7); padding:9px 8px 9px 8px; margin-top:9px;float:right;"></span></button>
+</form>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<script src="val4.js">
+</script>
+<div class="mb">
+<form action="ipup.html" onsubmit="return val4()" method="post">
+<div class="in"> 
+<label>First Name:</label><br></div>
+<input id="name" class="bo" type="text" autocomplete="off" autofocus><br>
+<span id="nam" style="color:red;"></span><br>
+<div class="in">
+<label>Middle Name:</label><br></div>
+<input id="mname" class="bo" type="text" autocomplete="off"><br>
+<span id="mnam" style="color:red;"></span><br>
+<div class="in">
+<label>Last Name:</label><br></div>
+<input id="lname" class="bo" type="text" autocomplete="off"><br>
+<span id="lnam" style="color:red;"></span><br>
+<div class="in">
+<label>Address:</label><br></div>
+<textarea id="address" class="bo" rows="2" cols="5" autocomplete="off"></textarea><br>
+<span id="add" style="color:red;"></span><br>
+<div class="in">
+<label>Phone:</label><br></div>
+<input id="phone" class="bo" type="int" autocomplete="off"><br>
+<p id="phn" style="color:red;"></p><br>
+<div class="in">
+<label>Email:</label><br></div>
+<input id="email" class="bo" type="text" autocomplete="off"><br>
+<span id="el" style="color:red;"></span><br><br>
+<input type="submit" style="width:45%;display:block;background-image:rgba(0,0,0,0.7); background-image:linear-gradient(to bottom right,rgba(255,255,255,0.1),rgba(0,0,0,0.7)); float:right; color:black;"  value="Next">
+</form>
+</div>
+</body>
+</div>
+</center>
+<div style="margin-top:70px; background-color:black; width:100%; height:100px; border-top:10px solid red;">
+<div style="margin-top:30px; margin-left:700px;" class="ic"><a href="https://www.facebook.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-facebook-official" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://twitter.com/login" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-twitter-square" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://linkedin.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-linkedin-square" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://www.instagram.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-instagram" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://www.youtube.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-youtube-play" style="font-size:30px;"></i></div>
+</div>
+</html>

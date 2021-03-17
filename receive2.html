@@ -1,0 +1,195 @@
+<html>
+<title>
+Receiver Info
+</title>
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+#nav
+{
+width:100%;
+height:60px;
+background-color:black;
+border-bottom:10px solid;
+border-bottom-color:red;
+}
+.lg
+{
+width:130px; 
+height:40px; 
+padding:4px 4px 4px 4px; 
+float:right; 
+margin-top:15px;  
+background-color:black; 
+color:white; 
+font-size:20px;
+}
+.lg:hover
+{
+background-color:rgba(255,255,255,0.2)
+}
+#sq1
+{
+width:750px;
+height:600px;
+border:0.1px solid;
+margin-top:40px;
+background-color:rgba(0,0,128,0.2);
+background-image:radial-gradient(red,rgba(0,0,0,1));
+}
+#sq2
+{
+width:550px;
+height:450px;
+border:5px solid;
+margin-top:75px;
+color:white;
+background-image:radial-gradient(rgba(255,0,0,1),rgba(0,0,0,0)80%);
+}
+h3
+{
+height:50px;
+padding-top:20px;
+background-color:black;
+color:white;
+}
+.ip
+{
+width:200px;
+height:20px;
+font-size:15px;
+}
+.lb
+{
+font-size:20px;
+padding-left:0px;
+}
+.con
+{
+margin-top:15px;
+}
+#btn
+{
+background-color:black;
+color:white;
+}
+li
+{
+list-style-type:none;
+text-decoration:none;
+float:right;
+color:white;
+font-size:20px;
+margin-left:20px;
+padding:10px 20px 12px 20px; 
+}
+li:hover
+{
+background-color:rgba(255,255,255,0.3);
+border-bottom:11px solid rgba(0,255,255,0.5);
+}
+.dd
+{
+text-decoration:none;
+background-color:black;
+border-color:transparent;
+color:white;
+font-size:20px;
+padding:13px 0px 11px 20px;
+float:right;
+}
+.dd:hover
+{
+background-color:rgba(255,255,255,0.3);
+color:black;
+border-bottom:12px solid rgba(0,255,255,0.5);
+}
+</style>
+</head>
+<body>
+<div>
+<div>
+<nav class="navbar navbar-fixed-top" style="height:60px; background-color:black; border-bottom:10px solid red;">
+<ul>
+<img src="p4.png" style="width:100px; height:50px;">
+<a href="#" style="text-decoration:none; color:white; "><li style="background-color:rgba(255,255,255,0.3); border-bottom:10px solid rgba(0,255,255,0.5);">User</li></a>
+<a heref="send.html" style="text-decoration:none; color:white;"><li>Back</li></a>
+<a href="aboutus.html" style="text-decoration:none; color:white;"><li>About us</li></a>
+<select onchange="location=this.value" class="dd" name="Cities">
+<option>Branches</option>
+<option value="bglr.html">Bengaluru</option>
+<option value="mglr.html">Mangaluru</option>
+<option value="bgk.html">Bagalkot</option>
+</select>
+<a href="main.html" style="text-decoration:none; color:white;"><li><span class="glyphicon glyphicon-home"></li></a>
+<div style="float:right; margin-right:50px;">
+<form action="https://www.google.com/search" method="GET">
+<input type="text" name="q" style="width:300px; height:32px;float:right; margin-top:10px; font-size:20px;" placeholder="Search">
+<button type="submit" style="background-color:transparent; border-color:transparent; margin-right:-9px; margin-top:-3px;"><span class="glyphicon glyphicon-search" style="background-color:rgba(0,255,255,0.7); padding:6px 8px 9px 8px; margin-top:9px;float:right; height:32px;"></span></button>
+</form>
+</div>
+</ul>
+</nav>
+</div>
+</div><br>
+<center>
+<div id="sq1">
+<div id="sq2">
+<div>
+<h3>
+Enter receiver details
+</h3>
+<script src="val62.js"> 
+</script>
+<form onsubmit="return val62()"  action="order.html" method="post">
+<div class="con">
+<label class="lb" style="padding-left:20px;">Name:</label>
+<input class="ip" type="text" style="color:black;" id="fname" name="fname"><br>
+<span id="na" name="na" style="color:white;"></span>
+</div>
+<div class="con">
+<label class="lb" style="padding-left:20px;">MiddleName:</label>
+<input class="ip" type="text" style="color:black;" id="mname" name="mname"><br>
+<span id="mna" name="mna" style="color:white;"></span>
+</div>
+<div class="con">
+<label class="lb" style="padding-left:20px;">LastName:</label>
+<input class="ip" type="text" style="color:black;" id="lname" name="lname"><br>
+<span id="lna" name="lna" style="color:white;"></span>
+</div>
+<div class="con">
+<label class="lb">Address:</label>
+<textarea rows="2" cols="5" id="address" name="address" style="width:200px; color:black; font-size:15px;" autocomplete="off"></textarea><br>
+<span id="ad" name="ad" style="color:white;"></span>
+</div>
+<div class="con">
+<label class="lb" style="padding-left:20px;">Phone:</label>
+<input class="ip" style="color:black;" type="text" id="phone" name="phone"><br>
+<span id="ph" name="ph" style="color:white;"></span>
+</div>
+<div class="con">
+<input class="ip" type="submit" style="font-size:20px; width:150px; height:40px;" value="Next" id="btn">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</center>
+<div style="background-color:red; width:100%; height:10px;margin-top:40px;">
+</div>
+<div style="background-color:black; width:100%; height:20%;">
+</div>
+</body>
+</center>
+</html>

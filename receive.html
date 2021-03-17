@@ -1,0 +1,131 @@
+<html>
+<title>
+Receiver Info
+</title>
+<head>
+<style>
+#nav
+{
+width:100%;
+height:60px;
+background-color:black;
+border-bottom:10px solid;
+border-bottom-color:red;
+}
+.lg
+{
+width:130px; 
+height:40px; 
+padding:4px 4px 4px 4px; 
+float:right; 
+margin-top:15px;  
+background-color:black; 
+color:white; 
+font-size:20px;
+}
+.lg:hover
+{
+background-color:rgba(255,255,255,0.2)
+}
+#sq1
+{
+width:600px;
+height:530px;
+border:0.1px solid;
+margin-top:40px;
+background-color:rgba(0,0,128,0.2);
+background-image:radial-gradient(red,rgba(0,0,0,1));
+}
+#sq2
+{
+width:400px;
+height:370px;
+border:5px solid;
+margin-top:75px;
+color:white;
+background-image:radial-gradient(rgba(255,0,0,1),rgba(0,0,0,0)80%);
+}
+h3
+{
+height:50px;
+padding-top:20px;
+background-color:black;
+color:white;
+}
+.ip
+{
+width:200px;
+height:20px;
+font-size:20px;
+}
+.lb
+{
+font-size:25px;
+padding-left:0px;
+}
+.con
+{
+margin-top:15px;
+}
+#btn
+{
+background-color:black;
+color:white;
+}
+</style>
+</head>
+<body>
+<div id="nav">
+<img src="p4.png" style="float:left; width:150px; height:60px; padding-left:250px;">
+<div>
+<a href="main.html">
+<input type="button" value="Log out" class="lg" style="margin-right:300px;">
+</a>
+</div>
+	<div>
+	<a href="main2.html">
+	<input type="button" value="Home" class="lg" style="margin-right:700px; margin-top:-40px;">
+	</a>
+	</div>
+</div>
+<center>
+<div id="sq1">
+<div id="sq2">
+<div>
+<h3>
+Enter receiver details
+</h3>
+<script src="val6.js"> 
+</script>
+<form action="order.html" onsubmit="return val6()" method="post">
+<div class="con">
+<label class="lb" style="padding-left:20px;">Name:</label>
+<input class="ip" type="text" id="fname"><br>
+<span id="na" style="color:white;"></span>
+</div>
+<div class="con">
+<label class="lb">Address:</label>
+<input class="ip" type="text" style="height:70px; size:30px;" id="address"><br>
+<span id="ad" style="color:white;"></span>
+</div>
+<div class="con">
+<label class="lb" style="padding-left:20px;">Phone:</label>
+<input class="ip" type="text" id="phone"><br>
+<span id="ph" style="color:white;"></span>
+</div>
+<div class="con">
+<input class="ip" type="submit" style="font-size:20px; width:150px; height:40px;" value="Next" id="btn">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</center>
+<div style="background-color:red; width:100%; height:10px;margin-top:40px;">
+</div>
+<div style="background-color:black; width:100%; height:20%;">
+</div>
+</body>
+</center>
+</html>

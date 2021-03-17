@@ -1,0 +1,160 @@
+<html>
+<title>Goods Transportation</title>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.im
+{
+width:30%;
+margin-left:30px;
+}
+#s:hover
+{
+background-color:rgba(0,0,255,1);
+}
+.hl
+{
+color:white;
+}
+.bt
+{
+width:45%;
+background-image:radial-gradient(rgba(255,255,255,0.3),rgba(0,118,0,0.7));
+border:0px solid;
+border-radius:6px;
+color:black;
+}
+.bt:hover
+{
+background-image:radial-gradient(rgba(0,255,0,0.5),rgba(0,255,0,0.3));
+}
+.btns
+{
+width:45%;
+background-image:radial-gradient(rgba(0,0,255,0.3),rgba(0,0,255,0.7));
+border:0.3px solid;
+border-radius:6px;
+color:black;
+}
+.btns:hover
+{
+background-image:radial-gradient(rgba(0,0,255,0.5),rgba(0,0,255,0.3));
+}
+li
+{
+list-style-type:none;
+text-decoration:none;
+float:right;
+color:white;
+font-size:20px;
+margin-left:20px;
+padding:10px 20px 12px 20px; 
+}
+li:hover
+{
+background-color:rgba(255,255,255,0.3);
+border-bottom:11px solid rgba(0,255,255,0.5);
+}
+.dd
+{
+text-decoration:none;
+background-color:black;
+border-color:transparent;
+color:white;
+font-size:20px;
+padding:13px 0px 11px 20px;
+float:right;
+}
+.dd:hover
+{
+background-color:rgba(255,255,255,0.3);
+color:black;
+border-bottom:12px solid rgba(0,255,255,0.5);
+}
+.ic
+{
+float:left;
+}
+</style> 
+</head>
+<body style="background-color:black;">
+<script src="val2.js">
+</script>
+<div>
+<div>
+<nav class="navbar navbar-fixed-top" style="height:60px; background-color:black; border-bottom:10px solid red;">
+<ul>
+<img src="p4.png" style="width:100px; height:50px;">
+<a href="admin.html" style="text-decoration:none; color:white;"><li style="margin-right:100px;">Admin</li></a>
+<a href="#" style="text-decoration:none; color:white; "><li style="background-color:rgba(255,255,255,0.3); border-bottom:10px solid rgba(0,255,255,0.5);">User</li></a>
+<a href="aboutus.html" style="text-decoration:none; color:white;"><li>About us</li></a>
+<select onchange="location=this.value" class="dd" name="Cities">
+<option>Branches</option>
+<option value="bglr.html">Bengaluru</option>
+<option value="mglr.html">Mangaluru</option>
+<option value="bgk.html">Bagalkot</option>
+</select>
+<a href="main.html" style="text-decoration:none; color:white;"><li><span class="glyphicon glyphicon-home"></li></a>
+<div style="float:right; margin-right:50px;">
+<form action="https://www.google.com/search" method="GET">
+<input type="text" name="q" style="width:300px; height:32px;float:right; margin-top:10px; font-size:20px;" placeholder="Search">
+<button type="submit" style="background-color:transparent; border-color:transparent; margin-right:-9px; margin-top:-3px;"><span class="glyphicon glyphicon-search" style="background-color:rgba(0,255,255,0.7); padding:9px 8px 9px 8px; margin-top:9px;float:right;"></span></button>
+</form>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div style="background-color:rgba(0,0,0,0.8); margin-top:100px;">
+<center>
+<div style="width:500px; padding:20px 20px 20px 20px;margin-top:30px; background-image:linear-gradient(to bottom right,rgba(255,0,0,0.5),rgba(0,0,255,0.5));border-radius:48px;">
+<head>
+<h1 style="color:red; font-family:arial; background:-webkit-radial-gradient(orange,darkblue); -webkit-background-clip:text; -webkit-text-fill-color:transparent;"><b>Goods<br>Transportation</b></h1> 
+<marquee id='s' style="color:white; border:0px solid; border-radius:12px; border-color:rgba(255,0,0,0.5); background-image:linear-gradient(to bottom left,rgba(0,0,255,1),chocolate);" direction='left' bgcolor='navy' width="55%"><div onMouseOver="document.getElementById('s').stop();" onMouseOut="document.getElementById('s').start();">We are your reliable cargo solution</div></marquee>
+<br><br>
+<div style="padding-bottom:10px;width:350px;background-image:linear-gradient(to bottom right,rgba(0,0,255,0.6),rgba(255,0,0,1));border-radius:48px; box-shadow:10px 10px 10px rgba(0,0,0,0.5);">
+<img class="im" src="p2.jpg" alt="Loading....">
+<form name="myform" action="main2.html" onsubmit="return val2()" method="post">
+<div style="float:left; padding-left:95px;">
+<label class="hl">Username:</label>
+</div><br>
+<div style="width:45%;">
+<input type="text" id="name" placeholder="Enter your username" max="10" required autocomplete="off" autofocus>
+</div><br>
+<p id="h" style="color:white; margin-top:-20px; margin-right:8px; width:150px; background-color:black;"></p>
+<div style="float:left; padding-left:95px;">
+<label class="hl">Password:</label>
+</div><br>
+<div style="width:45%;">
+<input type="password" placeholder="Enter your password" id="psw" required autocomplete="off">
+</div>
+<br>
+<p id="pp" style="color:white; margin-top:-20px; margin-right:8px; width:150px; background-color:black;"></p>
+<br><br>
+<button type="submit" style="margin-left:20px;" class="bt">Login</button>
+</form>
+<a href="signin.html">
+<input style="margin-left:20px;" class="btns" type="button"  value="Sign in">
+</a>
+</div>
+</div>
+<div style="margin-top:70px; background-color:black; width:100%; height:100px; border-top:10px solid red;">
+<div style="margin-top:30px; margin-left:460px;" class="ic"><a href="https://www.facebook.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-facebook-official" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://twitter.com/login" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-twitter-square" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://linkedin.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-linkedin-square" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://www.instagram.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-instagram" style="font-size:30px;"></i></div>
+<div style="margin-top:30px;" class="ic"><a href="https://www.youtube.com/" style="text-decoration:none; color:rgba(255,255,255,0.4); margin-left:30px;"><i class="fa fa-youtube-play" style="font-size:30px;"></i></div>
+</div>
+</body>
+</div>
+</center>
+</html>
